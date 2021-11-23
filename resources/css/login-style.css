@@ -1,0 +1,30 @@
+body{
+    /* background: rgb(0,99,167);
+background: linear-gradient(90deg, rgba(0,99,167,1) 0%, rgba(0,211,255,1) 57%, rgba(5,85,193,1) 94%); */
+background: rgb(193,193,193);
+background: linear-gradient(90deg, rgba(193,193,193,1) 0%, rgba(238,245,255,1) 94%);
+}
+
+.title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    color: black;
+}
+
+.subtitle{
+    color: black;
+    font-size: 1rem;
+}
+
+.subtitle a{
+    text-decoration: none;
+    color: black;
+}
+
+.form-group input{
+    color: whit;
+}
+
+.row{
+    margin-top: 20rem;
+}

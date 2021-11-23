@@ -1,0 +1,163 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.sidebar{
+    background-color: #1B1E24;
+    min-height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    visibility: hidden;
+}
+
+.sidebar-brand{
+    background-color: #22262E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    padding: 0 10px
+}
+
+.brand{
+    font-size: 2rem;
+    color: white;
+    display: inline-block;
+}
+
+.navbar-buttons{
+    display: inline-block;
+}
+
+.button-brand{
+    background-color: #0D0F12;
+    display: inline-block;
+    padding: 4px 9px;
+}
+
+.button-brand a{
+    text-decoration: none;
+    color: white;
+}
+
+.button-brand a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.button-close{
+    background-color: #0D0F12;
+    display: inline-block;
+    padding: 4px 9px;
+}
+
+.button-close a{
+    text-decoration: none;
+    color: white;
+}
+
+.button-close a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+
+.profile{
+    display: flex;
+    margin: 0 10px;
+    margin-top: 10px;
+}
+
+.profile-description{
+    display: inline-block;
+}
+
+.profile-logo{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.profile-online{
+    color: greenyellow;
+}
+
+.profile-description-text{
+    margin-bottom: 0px;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: white;
+}
+
+.custom-navbar{
+    position: fixed !important;
+    top: 0;
+    left: 250px;
+    width: 100%;
+    background-color: #22262E !important;
+}
+
+.content{
+    margin-top: 56px;
+    margin-left: 250px;
+    background-color: #E5E9EC;
+    min-height: 100vh;
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+#navbarHomeBtn{
+    background-color: #0D0F12;
+}
+
+
+@media (max-width: 765px) {
+    .sidebar{
+        visibility: hidden;
+    }
+    .navbar-brand{
+        visibility: visible;
+    }
+    .content{
+        margin-left: 0px;
+    }
+    .custom-navbar{
+        left: 0px;
+        visibility: visible;
+    }
+    .button-close{
+        display: inline-block;
+    }
+}
+
+@media (min-width: 765px){
+    /* document.getElementById('custom-navbar').style.left = "250px"
+        document.getElementById("content").style.marginLeft = "250px"; */
+    .sidebar{
+        visibility: visible !important;
+    }
+    
+    .navbar-brand{
+        visibility: hidden;
+    }
+
+    .content{
+        margin-top: 0px;
+        margin-left: 250px !important;
+    }
+
+    .custom-navbar{
+        visibility: hidden;
+        left: 250px !important;
+    }
+    .button-close{
+        display: none;
+    }
+}
+
